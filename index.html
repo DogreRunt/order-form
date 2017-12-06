@@ -8,47 +8,49 @@
   <body>
     <h1>Order Now!</h1>
 
-    <form>
-      Name:
-      <input type="text" name="name">
-      <br>
+    <form action="thanks.html" method="post">
+      <fieldset>
+        <legend>Shipping Info</legend>
+        Name:
+          <input type="text" name="name"><br>
 
-      Address:
-      <input type="text" name="address">
-      <br>
+        Address:
+          <input type="text" name="address"><br>
 
-      City:
-      <input type="text" name="address">
-      State:
-      <input type="text" name="state">
-      Zip:
-      <input type="text" name="zip">
-      <br>
-      <br>
+        City:
+          <input type="text" name="address">
 
-      Size:
-      <select name="size">
-        <option value="small">Small</option>
-        <option value="medium">Medium</option>
-        <option value="large">Large</option>
-      </select>
-      Quantity:
-      <input type="text" name="quantity">
-      <br>
-      <br>
+        State:
+          <input type="text" name="state">
 
-      Card Type:
-      <input type="radio" name="card-type" value="visa"> Visa
-      <input type="radio" name="card-type" value="master-card"> Master Card
-      <input type="radio" name="card-type" value="discover"> Discover
-      <br>
+        Zip:
+          <input type="text" name="zip"><br>
+      </fieldset>
 
-      Credit Card Number:
-      <input type="text" name="credit-card-number">
-      <br>
-    </form>
+      <fieldset>
+        <legend>Order Info</legend>
+        Size:
+          <select name="size">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+          </select>
 
-    <form action="thanks.html">
+        Quantity:
+          <input type="text" name="quantity"><br>
+      </fieldset>
+
+      <fieldset>
+        <legend>Payment Info</legend>
+        Card Type:
+          <input type="radio" name="card-type" value="visa"> Visa
+          <input type="radio" name="card-type" value="master-card"> Master Card
+          <input type="radio" name="card-type" value="discover"> Discover<br>
+
+        Credit Card Number:
+          <input type="text" name="credit-card-number"><br>
+      </fieldset>
+
       <input type="submit" value="submit" />
     </form>
 
